@@ -99,16 +99,16 @@ section h2 {
 
 .projects {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+    flex-wrap: wrap;          /* перенос на новую строку */
+    justify-content: center;  /* центрируем карточки */
+    gap: 20px;                /* расстояние между карточками */
 }
 
 .project {
+    width: 300px;            /* фиксированная ширина */
     background-color: #1e1e1e;
     padding: 15px;
     border-radius: 10px;
-    width: 300px;
     text-align: center;
 }
 
