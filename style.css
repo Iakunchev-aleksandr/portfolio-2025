@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
+    scroll-behavior: smooth;
+}
+
+header {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #1f1f1f, #333);
+}
+
+header h1 {
+    margin: 0.2em 0;
+    font-size: 3em;
+}
+
+header p {
+    margin: 0.5em 0 1em 0;
+    font-size: 1.2em;
+}
+
+header .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 80px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.2em;
+    color: #ff6600;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none; 
+    padding: 0;       
+    margin: 0;       
+}
+
+.skills li {
+    background-color: #222;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.filters {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.filters button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filters button.active {
+    background-color: #ff6600;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project {
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+#contact a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #111;
+}
+
+#about p {
+    text-align: center; /* центрируем текст горизонтально */
+    font-size: 1.2em;   /* чуть больше, если нужно */
+    margin-bottom: 30px; /* отступ от списка навыков */
+}

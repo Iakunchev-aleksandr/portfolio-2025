@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ゲーム開発者ポートフォリオ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">自己紹介</a></li>
+                <li><a href="#portfolio">プロジェクト</a></li>
+                <li><a href="#contact">連絡先</a></li>
+            </ul>
+        </nav>
+        <h1>アレクサンドル・ヤクンチェフ</h1>
+        <p>ゲーム開発者 / Game Developer</p>
+        <a href="#portfolio" class="btn">プロジェクトを見る</a>
+    </header>
+
+    <section id="about">
+        <h2>自己紹介</h2>
+        <p>Unreal Engine 5やBlenderを使った3Dゲーム開発が得意です。BluePrints、C++、UI/UX設計の経験があります。</p>
+        <ul class="skills">
+            <li>Unreal Engine 4,5</li>
+            <li>Unity</li>
+            <li>C#</li>
+            <li>Blender</li>
+            <li>C++ / Blueprints</li>
+            <li>3Dモデリング</li>
+            <li>UI/UX設計</li>
+        </ul>
+    </section>
+
+    <section id="portfolio">
+        <h2>プロジェクト</h2>
+        <div class="filters">
+            <button data-filter="all" class="active">全て</button>
+            <button data-filter="3d">3D</button>
+            <button data-filter="2d">2D</button>
+        </div>
+        <div class="projects">
+            <div class="project" data-type="3d">
+                <img src="screenshot1.jpg" alt="Project 1">
+                <h3>3Dアクションゲーム</h3>
+                <p>Unreal Engine 5を使ったアクションゲーム。ブループリント中心で開発。</p>
+            </div>
+            <div class="project" data-type="2d">
+                <img src="screenshot2.jpg" alt="Project 2">
+                <h3>2Dモバイルゲーム</h3>
+                <p>Unityで制作したモバイル向け2Dゲーム。簡単なUI付き。</p>
+            </div>
+            <!-- Добавляй сюда свои проекты -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>連絡先</h2>
+        <p>Email: <a href="mailto:example@mail.com">example@mail.com</a></p>
+        <p>GitHub: <a href="https://github.com/username" target="_blank">github.com/username</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ヤクンチェヴ・アレクサンドル</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
