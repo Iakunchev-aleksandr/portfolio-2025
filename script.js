@@ -1,17 +1,22 @@
+// script.js
+
 const filterButtons = document.querySelectorAll('.filters button');
 const projects = document.querySelectorAll('.project');
 
-filterButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-        filterButtons.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        // убираем класс active со всех кнопок
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        // добавляем active текущей кнопке
+        button.classList.add('active');
 
-        const filter = btn.dataset.filter;
-        projects.forEach(p => {
-            if(filter === 'all' || p.dataset.type === filter) {
-                p.style.display = 'block';
+        const filter = button.getAttribute('data-filter');
+
+        projects.forEach(project => {
+            if (filter === 'all' || project.getAttribute('data-type') === filter) {
+                project.style.display = 'block';
             } else {
-                p.style.display = 'none';
+                project.style.display = 'none';
             }
         });
     });

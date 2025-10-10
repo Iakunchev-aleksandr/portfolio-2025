@@ -99,13 +99,13 @@ section h2 {
 
 .projects {
     display: flex;
-    flex-wrap: wrap;          /* перенос на новую строку */
-    justify-content: center;  /* центрируем карточки */
-    gap: 20px;                /* расстояние между карточками */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .project {
-    width: 300px;            /* фиксированная ширина */
+    width: 300px;
     background-color: #1e1e1e;
     padding: 15px;
     border-radius: 10px;
@@ -115,6 +115,30 @@ section h2 {
 .project img {
     max-width: 100%;
     border-radius: 5px;
+}
+
+.media {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
 #contact a {
@@ -129,7 +153,7 @@ footer {
 }
 
 #about p {
-    text-align: center; /* центрируем текст горизонтально */
-    font-size: 1.2em;   /* чуть больше, если нужно */
-    margin-bottom: 30px; /* отступ от списка навыков */
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 30px;
 }
